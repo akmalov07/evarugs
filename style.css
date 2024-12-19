@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP&family=Oswald:wght@200..700&family=Playwrite+NL+Guides&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navlink {
+  color: #737373;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+}
+
+.book {
+  width: 50%;
+  padding: 190px 0 250px 0;
+  position: relative;
+}
+
+.bookimage {
+  position: absolute;
+  top: -50px;
+  left: 120%;
+}
+
+.bookavto {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 58.59px;
+  margin-bottom: 58px;
+}
+
+.bookbtn {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 23.44px;
+  padding: 15px 30px;
+  border-radius: 7px;
+  border: none;
+  background-image: linear-gradient(to right, #b90160, #2e3192);
+  color: white;
+}
+
+.kovrik {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58.59px;
+  text-align: center;
+
+  margin-bottom: 120px;
+}
+
+.eva {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58.59px;
+  color: #3d5bf5;
+  color: rgb(0, 0, 0) rgb(185, 1, 96) rgb(61, 91, 245) rgb(0, 0, 0);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrappermini {
+  width: 33%;
+  margin: 40px;
+  box-shadow: 0px 0px 40px 0px #b8005f33;
+}
+
+.kov {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  margin: 25px 33px 20px 22px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.41px;
+  color: #767676;
+  width: 70%;
+  margin: 20px 33px 23px 22px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    94.31deg,
+    rgba(212, 20, 90, 0.25) 0.96%,
+    rgba(46, 49, 146, 0.25) 104.83%
+  );
+  margin: 225px 0 30px 0;
+}
+
+.sectionmini {
+  position: relative;
+  width: 32%;
+  background-color: white;
+  margin: 98px 0 72px 0;
+  border-radius: 9px;
+}
+
+.lol {
+  border: #ff0000;
+  position: absolute;
+  left: 150px;
+  bottom: 155px;
+}
+
+.texxt {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  text-align: center;
+  width: 80%;
+  margin: 63px auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .navlist {
+    display: none;
+  }
+
+  .navbar {
+    padding-top: 140px;
+  }
+
+  .book {
+    width: 60%;
+    padding: 60px 0 200px 0;
+  }
+
+  .bookimage {
+    top: -170px;
+    left: 80%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+  }
+  .wrappermini {
+    width: 51%;
+  }
+
+  .section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sectionmini {
+    width: 85%;
+  }
+  .lol {
+    left: 240px;
+    top: -100px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .bookavto {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .bookavto {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .bookavto {
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .book {
+    margin: 0 auto;
+    padding: 50px 0 110px 0;
+  }
+
+  .bookimage {
+    display: none;
+  }
+
+  main {
+    background-image: url(./images/подложка\ 1.png);
+    background-repeat: no-repeat;
+  }
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .wrappermini {
+    width: 80%;
+  }
+
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .sectionmini {
+    width: 90%;
+  }
+  .lol {
+    left: 70px;
+    top: -100px;
+  }
+  .kov {
+    margin: 20px 25px 20px 17px;
+  }
+  .text {
+    margin: 20px 25px 20px 17px;
+  }
+}
